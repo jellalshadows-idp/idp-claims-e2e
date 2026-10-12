@@ -1,35 +1,4 @@
 {
-  "module": {
-    "component_e2e-smoke-app": {
-      "archive_on_destroy": false,
-      "description": "Pipeline smoke repository, partial apply",
-      "environments": {
-        "dev": {
-          "protected": false
-        }
-      },
-      "name": "e2e-smoke-app",
-      "owner_team_id": "${module.group_e2e-smoke.team_id}",
-      "required_approvals": 1,
-      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/component?ref=089c63e63c6eda19a716926ceddfc22bf7d13f30",
-      "topics": [
-        "e2e",
-        "smoke"
-      ],
-      "writer_app_id": 5255579
-    },
-    "group_e2e-smoke": {
-      "description": "Pipeline smoke team",
-      "members": [
-        {
-          "role": "maintainer",
-          "user": "jellalshadows"
-        }
-      ],
-      "name": "e2e-smoke",
-      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/group?ref=089c63e63c6eda19a716926ceddfc22bf7d13f30"
-    }
-  },
   "provider": {
     "github": {
       "owner": "jellalshadows-idp"
