@@ -1,8 +1,8 @@
 apiVersion: idp/v1
 kind: Component
 name: e2e-smoke-app
-description: Pipeline smoke repository
+description: Pipeline smoke repository, updated
 owner: group:e2e-smoke
 environments: [dev]
 github:
-  topics: [e2e]
+  topics: [e2e, smoke]
