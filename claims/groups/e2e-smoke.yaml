@@ -5,5 +5,3 @@ description: Pipeline smoke team
 members:
   - user: jellalshadows
     role: maintainer
-  - user: e2e-no-such-login-idp1c
-    role: member
