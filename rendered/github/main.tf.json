@@ -1,0 +1,59 @@
+{
+  "module": {
+    "component_e2e-smoke-app": {
+      "archive_on_destroy": false,
+      "description": "Pipeline smoke repository",
+      "environments": {
+        "dev": {
+          "protected": false
+        }
+      },
+      "name": "e2e-smoke-app",
+      "owner_team_id": "${module.group_e2e-smoke.team_id}",
+      "required_approvals": 1,
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/component?ref=575fbc1bf8877b7216e76df40fd010ac57f37c15",
+      "topics": [
+        "e2e"
+      ],
+      "writer_app_id": 5255579
+    },
+    "group_e2e-smoke": {
+      "description": "Pipeline smoke team",
+      "members": [
+        {
+          "role": "maintainer",
+          "user": "jellalshadows"
+        }
+      ],
+      "name": "e2e-smoke",
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/group?ref=575fbc1bf8877b7216e76df40fd010ac57f37c15"
+    }
+  },
+  "provider": {
+    "github": {
+      "owner": "jellalshadows-idp"
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "../../tfstate/github.tfstate"
+      }
+    },
+    "encryption": {
+      "plan": {
+        "enforced": true
+      },
+      "state": {
+        "enforced": true
+      }
+    },
+    "required_providers": {
+      "github": {
+        "source": "integrations/github",
+        "version": "6.13.0"
+      }
+    },
+    "required_version": "1.12.6"
+  }
+}
