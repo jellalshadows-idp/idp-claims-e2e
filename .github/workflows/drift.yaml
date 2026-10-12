@@ -18,10 +18,11 @@ concurrency:
 
 jobs:
   drift:
-    uses: jellalshadows-idp/idp-engine/.github/workflows/drift.yaml@575fbc1bf8877b7216e76df40fd010ac57f37c15 # unreleased
+    uses: jellalshadows-idp/idp-engine/.github/workflows/drift.yaml@089c63e63c6eda19a716926ceddfc22bf7d13f30 # unreleased
     permissions:
       contents: read
       issues: write
     secrets:
       IDP_READER_PRIVATE_KEY: ${{ secrets.IDP_READER_PRIVATE_KEY }}
       IDP_STATE_PASSPHRASE: ${{ secrets.IDP_STATE_PASSPHRASE }}
+      IDP_WRITER_PRIVATE_KEY: ${{ secrets.IDP_WRITER_PRIVATE_KEY }}
