@@ -2,7 +2,7 @@
   "module": {
     "component_e2e-smoke-app": {
       "archive_on_destroy": false,
-      "description": "Pipeline smoke repository, updated",
+      "description": "Pipeline smoke repository, partial apply",
       "environments": {
         "dev": {
           "protected": false
