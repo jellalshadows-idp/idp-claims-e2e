@@ -1,0 +1,10 @@
+apiVersion: idp/v1
+kind: Platform
+github:
+  org: jellalshadows-idp
+  writerAppId: 5255579
+  archiveOnDestroy: false
+naming:
+  requiredPrefix: e2e-
+environments:
+  dev: {}

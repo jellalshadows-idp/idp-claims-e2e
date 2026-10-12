@@ -1,0 +1,7 @@
+apiVersion: idp/v1
+kind: Group
+name: e2e-smoke
+description: Pipeline smoke team
+members:
+  - user: jellalshadows
+    role: maintainer
