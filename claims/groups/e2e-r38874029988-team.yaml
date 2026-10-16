@@ -1,9 +1,0 @@
-apiVersion: idp/v1
-kind: Group
-name: e2e-r38874029988-team
-description: End-to-end harness team
-members:
-  - user: jellalshadows
-    role: maintainer
-  - user: ADRIAN-MANUEL
-    role: member
