@@ -1,0 +1,8 @@
+apiVersion: idp/v1
+kind: Component
+name: e2e-r41190720885-app
+description: End-to-end harness repository
+owner: group:e2e-r41190720885-team
+environments: [dev]
+github:
+  topics: [e2e, harness]
