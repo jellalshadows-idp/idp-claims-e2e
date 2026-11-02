@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   recover:
-    uses: jellalshadows-idp/idp-engine/.github/workflows/recover.yaml@08ec386b36f80d338d5cbf3927848af018ca725b # unreleased
+    uses: jellalshadows-idp/idp-engine/.github/workflows/recover.yaml@83234a64f67114b46b9164fd76ca6ed50f6c869e # unreleased
     permissions:
       actions: read
       contents: read
