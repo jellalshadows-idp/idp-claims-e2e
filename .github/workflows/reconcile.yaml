@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   reconcile:
-    uses: jellalshadows-idp/idp-engine/.github/workflows/reconcile.yaml@854c62adaebf3e0a7974b2be718643e47bc44946 # unreleased
+    uses: jellalshadows-idp/idp-engine/.github/workflows/reconcile.yaml@d792548a29a15119ff40b9c998647c2f958ce8df # unreleased
     permissions:
       contents: read
       issues: write
