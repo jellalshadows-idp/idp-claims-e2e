@@ -1,36 +1,4 @@
 {
-  "module": {
-    "component_e2e-r41554084788-app": {
-      "archive_on_destroy": false,
-      "description": "End-to-end harness repository, updated",
-      "environments": {
-        "dev": {
-          "protected": false
-        }
-      },
-      "name": "e2e-r41554084788-app",
-      "owner_team_id": "${module.group_e2e-r41554084788-team.team_id}",
-      "required_approvals": 1,
-      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/component?ref=d1e7285d608ec9fc7f79287bedef34bfb3c27cd7",
-      "topics": [],
-      "writer_app_id": 5255579
-    },
-    "group_e2e-r41554084788-team": {
-      "description": "End-to-end harness team",
-      "members": [
-        {
-          "role": "maintainer",
-          "user": "jellalshadows"
-        },
-        {
-          "role": "member",
-          "user": "ADRIAN-MANUEL"
-        }
-      ],
-      "name": "e2e-r41554084788-team",
-      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/group?ref=d1e7285d608ec9fc7f79287bedef34bfb3c27cd7"
-    }
-  },
   "provider": {
     "github": {
       "owner": "jellalshadows-idp"
