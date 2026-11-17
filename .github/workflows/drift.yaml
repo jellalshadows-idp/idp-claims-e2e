@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   drift:
-    uses: jellalshadows-idp/idp-engine/.github/workflows/drift.yaml@7d1b009bb82e241a771613f5f9f85016903f3034 # unreleased
+    uses: jellalshadows-idp/idp-engine/.github/workflows/drift.yaml@368e5a387fc87b5c428b924adf316ff6dc67f640 # unreleased
     permissions:
       contents: read
       issues: write
