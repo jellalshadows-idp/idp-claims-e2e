@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   pr:
-    uses: jellalshadows-idp/idp-engine/.github/workflows/pr.yaml@fb24c4041fbf8a300ee0330640b4c5fdeec3fdd5 # unreleased
+    uses: jellalshadows-idp/idp-engine/.github/workflows/pr.yaml@531d63b732db953d7d6e8fece27530735e6ee3f7 # unreleased
     permissions:
       contents: read
       pull-requests: write
