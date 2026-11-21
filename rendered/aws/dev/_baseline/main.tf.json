@@ -1,0 +1,26 @@
+{
+  "module": {
+    "baseline": {
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/aws/baseline?ref=fbeaecad6dbe7a0e3cdba37c7980a58fb040ab93"
+    }
+  },
+  "provider": {
+    "aws": {
+      "region": "eu-west-1"
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "terraform.tfstate"
+      }
+    },
+    "required_providers": {
+      "aws": {
+        "source": "hashicorp/aws",
+        "version": "6.71.0"
+      }
+    },
+    "required_version": "1.13.2"
+  }
+}
