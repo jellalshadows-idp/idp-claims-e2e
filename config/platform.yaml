@@ -7,4 +7,4 @@ github:
 naming:
   requiredPrefix: e2e-
 environments:
-  dev: {}
+  dev: { aws: { accountId: "000000000004", region: eu-west-1 } }
