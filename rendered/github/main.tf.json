@@ -1,4 +1,44 @@
 {
+  "module": {
+    "component_e2e-r45083353919-app": {
+      "archive_on_destroy": false,
+      "description": "End-to-end harness repository",
+      "environments": {
+        "dev": {
+          "protected": false,
+          "variables": {
+            "AWS_REGION": "eu-west-1",
+            "AWS_ROLE_ARN": "arn:aws:iam::000000000004:role/e2e-r45083353919-app-dev-ci",
+            "ECR_REPOSITORY": "000000000004.dkr.ecr.eu-west-1.amazonaws.com/e2e-r45083353919-app"
+          }
+        }
+      },
+      "name": "e2e-r45083353919-app",
+      "owner_team_id": "${module.group_e2e-r45083353919-team.team_id}",
+      "required_approvals": 1,
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/component?ref=803998ee1b70233357f832bf164b70262e8a26dc",
+      "topics": [
+        "e2e",
+        "harness"
+      ],
+      "writer_app_id": 5255579
+    },
+    "group_e2e-r45083353919-team": {
+      "description": "End-to-end harness team",
+      "members": [
+        {
+          "role": "maintainer",
+          "user": "jellalshadows"
+        },
+        {
+          "role": "member",
+          "user": "Adrian-Manuel"
+        }
+      ],
+      "name": "e2e-r45083353919-team",
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/github/group?ref=803998ee1b70233357f832bf164b70262e8a26dc"
+    }
+  },
   "provider": {
     "github": {
       "owner": "jellalshadows-idp"
