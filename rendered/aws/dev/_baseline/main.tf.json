@@ -1,7 +1,7 @@
 {
   "module": {
     "baseline": {
-      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/aws/baseline?ref=188c0a895e831b5315e12adfca43c5e5ce61e768"
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/aws/baseline?ref=c42eedc9c10fbbef62d48c8bc13a47731988acad"
     }
   },
   "provider": {
@@ -18,9 +18,9 @@
     "required_providers": {
       "aws": {
         "source": "hashicorp/aws",
-        "version": "6.71.0"
+        "version": "6.72.0"
       }
     },
-    "required_version": "1.13.2"
+    "required_version": "1.13.9"
   }
 }
