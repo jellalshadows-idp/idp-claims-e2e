@@ -1,7 +1,7 @@
 {
   "module": {
     "baseline": {
-      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/aws/baseline?ref=c42eedc9c10fbbef62d48c8bc13a47731988acad"
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/aws/baseline?ref=1694c2a0a126b3cfa0fe10f5b58bef30622f3356"
     }
   },
   "provider": {
