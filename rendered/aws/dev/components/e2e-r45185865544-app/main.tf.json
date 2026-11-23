@@ -1,0 +1,31 @@
+{
+  "module": {
+    "component": {
+      "environment": "dev",
+      "github_repository": "jellalshadows-idp/e2e-r45185865544-app",
+      "oidc_provider_arn": "arn:aws:iam::000000000004:oidc-provider/token.actions.githubusercontent.com",
+      "repository_name": "e2e-r45185865544-app",
+      "role_name": "e2e-r45185865544-app-dev-ci",
+      "source": "git::https://github.com/jellalshadows-idp/idp-engine.git//modules/aws/component?ref=1694c2a0a126b3cfa0fe10f5b58bef30622f3356"
+    }
+  },
+  "provider": {
+    "aws": {
+      "region": "eu-west-1"
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "terraform.tfstate"
+      }
+    },
+    "required_providers": {
+      "aws": {
+        "source": "hashicorp/aws",
+        "version": "6.72.0"
+      }
+    },
+    "required_version": "1.13.9"
+  }
+}
